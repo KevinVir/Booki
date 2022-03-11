@@ -1,5 +1,52 @@
-section img
+body
 {
-	width: 120px;
-	height: 120px;
+	font-family: 'Raleway', sans-serif;
+}
+
+header img
+{
+  position: absolute;
+}
+
+#nav
+{
+  display: flex;
+ justify-content: center;
+}
+
+#filtres
+{
+  display: flex;
+}
+
+li
+{
+	margin: 30px;
+}
+
+a
+{
+	color: black;
+	text-decoration: none;
+}
+
+a:hover
+{
+	text-decoration: overline;
+	color: #0065FC;
+}
+
+li
+{
+	list-style-type: none;
+}
+
+h1
+{
+	font-size: 22px;
+}
+
+@media screen and (max-width: 768px) /*Pour Téléphone Portable */
+{
+
 }
