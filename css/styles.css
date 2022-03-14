@@ -3,25 +3,13 @@ body
 	font-family: 'Raleway', sans-serif;
 }
 
-header img
-{
-  position: absolute;
-}
+/* Header */
 
 #nav
 {
-  display: flex;
- justify-content: center;
-}
-
-#filtres
-{
-  display: flex;
-}
-
-li
-{
-	margin: 30px;
+display: flex;
+justify-content: flex-end;
+margin-right: 50px;
 }
 
 a
@@ -32,19 +20,146 @@ a
 
 a:hover
 {
-	text-decoration: overline;
+	border-top: 2px #0065FC solid;
 	color: #0065FC;
+}
+
+h1
+{
+	font-size: 2em;
+}
+
+#search
+{
+	display: flex;
+}
+
+.fa-map-marker
+{
+	border: 10px #F2F2F2 solid;
+	background-color: #F2F2F2;
+	border-radius: 15px 0px 0px 15px;
+}
+.boutonrecherche
+{
+	border : 2px #0065FC solid;
+	background-color: #0065FC;
+	color: white;
+	border-radius: 0px 15px 15px 0px;
+	width: 150px;
+	height: 51px;
+	font-size: 1.1em;
+	cursor: pointer;
+}
+
+.champrecherche
+{
+	border-top: 2px #F2F2F2 solid;
+	border-bottom: 2px #F2F2F2 solid;
+	border-left: none;
+	border-right: none;
+	width: 232px;
+	height: 51px;
+}
+
+input::placeholder
+{
+	color: black;
+	font-weight: bold;
+	font-size: 1.4em;
+}
+
+.icon2
+{
+	background-color: #F2F2F2;
+	border-radius: 15px 0px 0px 15px;
+	width: 3%;
+    line-height: 305%;
+	text-align: center;
+}
+
+
+#filtres_icon
+{
+  display: flex;
+  align-items: center;
+}
+
+ul
+{
+  display: flex;
 }
 
 li
 {
 	list-style-type: none;
+    margin: 30px;
 }
 
-h1
+#filtres li
 {
-	font-size: 22px;
+	border: 2px #D9D9D9 solid;
+	border-left: none;
+	border-radius: 40px;
+	height: 52px;
+    width: 194px;
 }
+
+a
+{
+  text-decoration: none;
+  color: black;
+}
+
+.icon
+{
+	color:#0065FC; 
+	border: 2px #DEEBFF solid;
+	border-radius: 100%;
+	background-color: #DEEBFF;
+	width: 24%;
+	line-height: 305%;
+	text-align: center;
+}
+
+li:hover
+{
+  background-color: #F2F2F2;
+  cursor: pointer;
+}
+
+.iconinfo
+{
+  display: flex;
+  align-items: center;
+}
+
+.iconinfo i
+{
+  border: 2px #F2F2F2 solid;
+  width: 20px;
+  height: 20px;
+  color: #0065FC;
+  border-radius: 50px;
+  margin-right: 8px;
+  text-align: center;
+  line-height: 18px;
+}
+
+/* Footer */
+
+footer
+{
+  	background-color: #F2F2F2;
+  	display: flex;
+}
+
+.footer_bloc
+{
+  	margin-right: 15%;
+  	margin-left: 3%;
+}
+
 
 @media screen and (max-width: 768px) /*Pour Téléphone Portable */
 {
