@@ -3,130 +3,145 @@ body
 	font-family: 'Raleway', sans-serif;
 }
 
-/* Header */
-
-#nav
-{
-display: flex;
-justify-content: flex-end;
-margin-right: 50px;
-}
-
-a
-{
-	color: black;
-	text-decoration: none;
-}
-
-a:hover
-{
-	border-top: 2px #0065FC solid;
-	color: #0065FC;
-}
-
 h1
 {
-	font-size: 2em;
+	font-size: 1.34em;
 }
+/* Header */
+
+/* Navigation */
+
+nav
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+	nav ul
+	{
+		display: flex;
+		margin-right: 50px;
+	}
+
+	nav li
+	{
+		margin-right: 110px;
+		list-style-type: none;
+	}
+
+	nav a
+	{
+    	text-decoration: none;
+    	color: black;
+	}
+
+	nav a:hover
+	{
+		color: #0065FC;
+    	border-top: 2px #0065FC solid;
+	}
+
+/*Recherche*/
 
 #search
 {
 	display: flex;
 }
 
-.fa-map-marker
-{
-	border: 10px #F2F2F2 solid;
-	background-color: #F2F2F2;
-	border-radius: 15px 0px 0px 15px;
-}
-.boutonrecherche
-{
-	border : 2px #0065FC solid;
-	background-color: #0065FC;
-	color: white;
-	border-radius: 0px 15px 15px 0px;
-	width: 150px;
-	height: 51px;
-	font-size: 1.1em;
-	cursor: pointer;
-}
+	.fa-map-marker
+	{
+		border: 10px #F2F2F2 solid;
+		background-color: #F2F2F2;
+		border-radius: 15px 0px 0px 15px;
+	}
+	.boutonrecherche
+	{
+		border : 2px #0065FC solid;
+		background-color: #0065FC;
+		color: white;
+		border-radius: 0px 15px 15px 0px;
+		width: 150px;
+		height: 51px;
+		font-size: 1.1em;
+		cursor: pointer;
+	}
 
-.champrecherche
-{
-	border-top: 2px #F2F2F2 solid;
-	border-bottom: 2px #F2F2F2 solid;
-	border-left: none;
-	border-right: none;
-	width: 232px;
-	height: 51px;
-}
+	.champrecherche
+	{
+		border-top: 2px #F2F2F2 solid;
+		border-bottom: 2px #F2F2F2 solid;
+		border-left: none;
+		border-right: none;
+		width: 232px;
+		height: 51px;
+	}
 
-input::placeholder
-{
-	color: black;
-	font-weight: bold;
-	font-size: 1.4em;
-}
+	input::placeholder
+	{
+		color: black;
+		font-weight: bold;
+		font-size: 1.4em;
+	}
 
-.icon2
-{
-	background-color: #F2F2F2;
-	border-radius: 15px 0px 0px 15px;
-	width: 3%;
-    line-height: 305%;
-	text-align: center;
-}
+	.icon2
+	{
+		background-color: #F2F2F2;
+		border-radius: 15px 0px 0px 15px;
+		width: 3%;
+    	line-height: 305%;
+		text-align: center;
+	}
 
+/* Filtres */
 
-#filtres_icon
+#filtres
 {
   display: flex;
   align-items: center;
 }
 
-ul
-{
-  display: flex;
-}
+    #filtres ul
+     {
+       display: flex;
+       flex-wrap: wrap;
+     }
 
-li
-{
-	list-style-type: none;
-    margin: 30px;
-}
+    #filtres li
+     {
+       display: flex;
+       align-items: center;
+       list-style-type: none;
+       border: 2px #F2F2F2 solid;
+       border-radius: 40px;
+       margin: 5px 10px 0px 0px;
+       padding: 0px 20px 0px 0px;
+     }
 
-#filtres li
-{
-	border: 2px #D9D9D9 solid;
-	border-left: none;
-	border-radius: 40px;
-	height: 52px;
-    width: 194px;
-}
+    #filtres a
+    {
+	    text-decoration: none;
+		color: black;
+		font-weight: bold;
+    }
 
-a
-{
-  text-decoration: none;
-  color: black;
-}
+    #filtres i
+    {
+    	color:#0065FC; 
+	    border: 2px #DEEBFF solid;
+	    border-radius: 30px;
+	    background-color: #DEEBFF;
+        margin-right: 20px;
+        padding: 22px 10px;
+      
+    }
 
-.icon
-{
-	color:#0065FC; 
-	border: 2px #DEEBFF solid;
-	border-radius: 100%;
-	background-color: #DEEBFF;
-	width: 24%;
-	line-height: 305%;
-	text-align: center;
-}
+	#filtres li:hover
+	{
+		background-color: #F2F2F2;
+		cursor: pointer;
+	}
 
-li:hover
-{
-  background-color: #F2F2F2;
-  cursor: pointer;
-}
+	/*info*/
 
 .iconinfo
 {
@@ -134,17 +149,17 @@ li:hover
   align-items: center;
 }
 
-.iconinfo i
-{
-  border: 2px #F2F2F2 solid;
-  width: 20px;
-  height: 20px;
-  color: #0065FC;
-  border-radius: 50px;
-  margin-right: 8px;
-  text-align: center;
-  line-height: 18px;
-}
+	.iconinfo i
+	{
+  	border: 2px #F2F2F2 solid;
+  	width: 20px;
+  	height: 20px;
+  	color: #0065FC;
+  	border-radius: 50px;
+  	margin-right: 8px;
+  	text-align: center;
+  	line-height: 18px;
+	}
 
 /* Footer */
 
@@ -152,14 +167,15 @@ footer
 {
   	background-color: #F2F2F2;
   	display: flex;
+    justify-content: space-around;
+    width:85%;
 }
 
-.footer_bloc
+footer a
 {
-  	margin-right: 15%;
-  	margin-left: 3%;
+  text-decoration: none;
+  color: black;
 }
-
 
 @media screen and (max-width: 768px) /*Pour Téléphone Portable */
 {
