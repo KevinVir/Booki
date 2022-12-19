@@ -10,7 +10,7 @@ Booki est une start-up qui souhaite développer un site Internet qui permette au
   <li>Intégrer du contenu conformément à une maquette</li>
 </ul>
 
-### Spécifications fonctionnelles
+## Spécifications fonctionnelles
 <ul>
   <li>Les usagers pourront rechercher des hébergements dans la ville de
       leur choix. Le champ de recherche est un champ de saisie, le texte
@@ -33,7 +33,7 @@ Booki est une start-up qui souhaite développer un site Internet qui permette au
 </li>
 </ul>
 
-### Spécifications techniques
+## Spécifications techniques
 <ul>
 
   <li>Deux maquettes ont été réalisées : l’une desktop et l’autre mobile. Le
